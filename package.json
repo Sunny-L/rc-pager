@@ -1,0 +1,23 @@
+{
+  "name": "rc-pager",
+  "version": "1.0.0",
+  "description": "react分页组件",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sunny-L/rc-pager.git"
+  },
+  "keywords": [
+    "react",
+    "pager"
+  ],
+  "author": "Sunny-L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sunny-L/rc-pager/issues"
+  },
+  "homepage": "https://github.com/Sunny-L/rc-pager#readme"
+}
