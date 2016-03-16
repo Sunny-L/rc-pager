@@ -82,6 +82,13 @@ const Pagination = React.createClass({
         this.handlePageArr(index,this.state.pagesString)
         this.props.onChange(index)
     },
+    inputChange:function(...args){
+        var page = this.refs.page_jump.value.replace(/^0|\D/g,'');
+        if(page>this.state.pagesString){
+            page = this.state.pagesString;
+        }
+        this.refs.page_jump.value = page;
+    },
     render:function(){
         let self = this;
         let prev_node = <li className="prev"><a onClick={this.handlePrev}>&lt;</a></li>;
@@ -108,7 +115,7 @@ const Pagination = React.createClass({
                     {this.state.current!=this.state.pagesString?next_node:''}
                     <li className="total_page">共<span>{this.props.pages}</span>页，</li>
                     <li>
-                        <span className="jump-page">到第<input type="text" ref="page_jump"/>页</span>
+                        <span className="jump-page">到第<input type="text" ref="page_jump"  onChange={self.inputChange}/>页</span>
                         <a onClick={self.handleJump} className="jump">确定</a>
                     </li>
                 </ul>
