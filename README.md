@@ -21,6 +21,7 @@ pageSize `Number`  每页显示数量
 
 
 
+
 ## DEMO
 
 ![pager](https://github.com/Sunny-L/rc-pager/blob/master/1.gif)
